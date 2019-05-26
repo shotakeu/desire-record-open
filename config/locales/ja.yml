@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    attributes:
+      record:
+        hour: "時間"
+        activity: "活動"
+        desire_level: "渇望度 (0~10)"
+        feeling_level: "気分 (0~10)"
+        comment: "考えたこと、気づいたこと"

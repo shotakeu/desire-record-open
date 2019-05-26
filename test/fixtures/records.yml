@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hour: 2019-05-24 18:03:47
+  activity: MyText
+  desire_level: 1
+  feeling_level: 1
+  comment: MyText
+  date: 2019-05-24
+
+two:
+  hour: 2019-05-24 18:03:47
+  activity: MyText
+  desire_level: 1
+  feeling_level: 1
+  comment: MyText
+  date: 2019-05-24
