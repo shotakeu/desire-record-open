@@ -1,0 +1,3 @@
+<%= month_calendar(attribute: :date) do |date| %>
+  <%= link_to date, controller: "records", action: "show_date", date: date %>
+<% end %>
