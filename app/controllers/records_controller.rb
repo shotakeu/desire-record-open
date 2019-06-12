@@ -8,12 +8,12 @@ class RecordsController < ApplicationController
     #@records = Record.all
     
     ## Return records created today.
-    @records = Record.where(date: Date.today)
+    @records = Record.where(date: Date.today).where(email: current_user.email)
   end
   
   # GET /records/show_date?date=2019-05-25  
   def show_date
-    @records = Record.where(date: params[:date])
+    @records = Record.where(date: params[:date]).where(email: current_user.email)
     render 'show_date'
   end
 
@@ -30,6 +30,7 @@ class RecordsController < ApplicationController
 
   # GET /records/1/edit
   def edit
+    # TODO : GETでアクセス時、emailで判定しないと他の人に編集されてしまう
     @record = Record.find(params[:id])
   end
 
@@ -37,6 +38,8 @@ class RecordsController < ApplicationController
   # POST /records.json
   def create
     @record = Record.new(record_params)
+    logger.debug(record_params)
+    @record.email = current_user.email
 
     respond_to do |format|
       if @record.save
@@ -80,7 +83,7 @@ class RecordsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_record
       #@record = Record.find(params[:id])
-      @record = Record.where(date: Date.today)
+      @record = Record.where(date: Date.today).where(email: current_user.email)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
