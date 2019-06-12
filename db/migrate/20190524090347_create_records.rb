@@ -9,6 +9,7 @@ class CreateRecords < ActiveRecord::Migration[5.2]
       t.date :date
 
       t.timestamps
+      t.string :email
     end
   end
 end

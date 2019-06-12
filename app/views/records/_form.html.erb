@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :hour %>
-    <%= form.datetime_select :hour %>
+    <%= form.datetime_select :hour ,:use_month_numbers => true, :minute_step => 60 %>
   </div>
 
   <div class="field">
