@@ -4,9 +4,6 @@ class RecordsController < ApplicationController
   # GET /records
   # GET /records.json
   def index
-    # default
-    #@records = Record.all
-    
     ## Return records created today.
     @records = Record.where(date: Date.today).where(email: current_user.email)
   end
@@ -32,6 +29,10 @@ class RecordsController < ApplicationController
   def edit
     # TODO : GETでアクセス時、emailで判定しないと他の人に編集されてしまう
     @record = Record.find(params[:id])
+    logger.debug(@record.inspect)
+    if @record.email != current_user.email 
+      render(:file => File.join(Rails.root, 'public/403.html'), :status => 403, :layout => false)    
+    end
   end
 
   # POST /records
