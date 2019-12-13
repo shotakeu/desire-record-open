@@ -1,0 +1,24 @@
+current directory: /home/shotaro/git/desire-record-open/vender/bundle/ruby/2.4.0/gems/unicorn-5.5.1/ext/unicorn_http
+/home/shotaro/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20191022-19698-1awhowf.rb extconf.rb
+checking for SIZEOF_OFF_T in ruby.h... yes
+checking for SIZEOF_SIZE_T in ruby.h... yes
+checking for SIZEOF_LONG in ruby.h... yes
+checking for rb_str_set_len() in ruby.h... yes
+checking for rb_hash_clear() in ruby.h... yes
+checking for gmtime_r() in time.h... yes
+checking if String#-@ (str_uminus) dedupes... no, needs Ruby 2.5+
+checking if Hash#[]= (rb_hash_aset) dedupes... no, needs Ruby 2.6+
+creating Makefile
+
+current directory: /home/shotaro/git/desire-record-open/vender/bundle/ruby/2.4.0/gems/unicorn-5.5.1/ext/unicorn_http
+make "DESTDIR=" clean
+
+current directory: /home/shotaro/git/desire-record-open/vender/bundle/ruby/2.4.0/gems/unicorn-5.5.1/ext/unicorn_http
+make "DESTDIR="
+compiling httpdate.c
+compiling unicorn_http.c
+linking shared-object unicorn_http.so
+
+current directory: /home/shotaro/git/desire-record-open/vender/bundle/ruby/2.4.0/gems/unicorn-5.5.1/ext/unicorn_http
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unicorn_http.so ./.gem.20191022-19698-70tdsv

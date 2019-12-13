@@ -1,0 +1,19 @@
+current directory: /home/shotaro/git/desire-record-open/vender/bundle/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+/home/shotaro/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20191022-4317-115m8np.rb extconf.rb
+creating Makefile
+
+current directory: /home/shotaro/git/desire-record-open/vender/bundle/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/shotaro/git/desire-record-open/vender/bundle/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/shotaro/git/desire-record-open/vender/bundle/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20191022-4317-1p8tqal/byebug
