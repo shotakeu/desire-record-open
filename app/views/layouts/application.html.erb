@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>飲酒渇望記録 DesireRecords</title>
+    <title>渇望記録 DesireRecords</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <h1>飲酒渇望記録 Desire Records</h1>
+    <h1>渇望記録 Desire Records</h1>
     <% if user_signed_in? %>
         <p><%= link_to "ログアウト(logout)", destroy_user_session_path, method: :delete %></p>
     <% end %>
