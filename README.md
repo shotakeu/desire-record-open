@@ -2,7 +2,7 @@
 
 Ruby on Railsで初めて作ったオリジナルなWebアプリです。
 
-## 飲酒渇望記録(DesireRecords)
+## 渇望記録(DesireRecords)
 
 主に薬物・アルコール・ギャンブル等の依存症患者の渇望や気分の変化を記録するためのRails製Webアプリ。
 
