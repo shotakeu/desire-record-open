@@ -11,13 +11,15 @@ class RecordsController < ApplicationController
   # GET /records/show_date?date=2019-05-25  
   def show_date
     @records = Record.where(date: params[:date]).where(email: current_user.email)
-    render 'show_date'
+    @user = current_user
+	render 'show_date'
   end
 
   # GET /records/1
   # GET /records/1.json
   def show
     @record = Record.find(params[:id])
+    @user = current_user
   end
 
   # GET /records/new
