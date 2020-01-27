@@ -1,8 +1,11 @@
 require 'test_helper'
 
 class RecordsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::ControllerHelpers
+
   setup do
     @record = records(:one)
+    sign_in FactoryBot.create(:john)
   end
 
   test "should get index" do
@@ -21,6 +24,9 @@ class RecordsControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to record_url(Record.last)
+  end
+
+  test "show_date by filiterd user" do
   end
 
   test "should show record" do

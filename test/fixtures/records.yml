@@ -7,6 +7,7 @@ one:
   feeling_level: 1
   comment: MyText
   date: 2019-05-24
+  email: "john@example.com"
 
 two:
   hour: 2019-05-24 18:03:47
@@ -15,3 +16,4 @@ two:
   feeling_level: 1
   comment: MyText
   date: 2019-05-24
+  email: "do@example.com"

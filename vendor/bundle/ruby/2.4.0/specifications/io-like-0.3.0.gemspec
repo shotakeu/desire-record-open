@@ -16,9 +16,8 @@ Gem::Specification.new do |s|
   s.homepage = "http://io-like.rubyforge.org".freeze
   s.rdoc_options = ["--title".freeze, "IO::Like Documentation".freeze, "--charset".freeze, "utf-8".freeze, "--line-numbers".freeze, "--inline-source".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 1.8.1".freeze)
-  s.rubyforge_project = "io-like".freeze
-  s.rubygems_version = "2.6.11".freeze
+  s.rubygems_version = "3.1.2".freeze
   s.summary = "A module which provides the functionality of an IO object to any class which provides a couple of simple methods.".freeze
 
-  s.installed_by_version = "2.6.11" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.1.2" if s.respond_to? :installed_by_version
 end

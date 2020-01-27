@@ -1,7 +1,7 @@
 5bac74fc745ca69ce1e61a2d28322d5434f5f08f		branch '3-x-stable' of https://github.com/rails/webpacker
 0903bd38bd2686e31bffc0792d06548e9b4f8367		branch 'cache-control' of https://github.com/rails/webpacker
 0464a54b1657600c90bd444545a72cee7561e698		branch 'fix-erb-loader' of https://github.com/rails/webpacker
-c7292e9a1e158e5fc9ec3026256cf7a42d70f549		branch 'master' of https://github.com/rails/webpacker
+0b550a0ed66f2c01baa5f05f1126abada47a6c6f		branch 'master' of https://github.com/rails/webpacker
 3a825ddedc206248729a5328f3517ba8add20573		branch 'react-example' of https://github.com/rails/webpacker
 ceb88c729cabe83357b999811166120bef437b24		branch 'service-workers' of https://github.com/rails/webpacker
 5dd6f80ee17fc6eec7621ba4f5019bd9b70bc02c		branch 'subprocess' of https://github.com/rails/webpacker
