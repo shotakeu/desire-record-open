@@ -20,7 +20,16 @@ class RecordsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create record" do
     assert_difference('Record.count') do
-      post records_url, params: { record: { activity: @record.activity, comment: @record.comment, date: @record.date, desire_level: @record.desire_level, feeling_level: @record.feeling_level, hour: @record.hour, email: @record.email} }
+      post records_url, params: { record:
+        { activity: @record.activity,
+          comment: @record.comment,
+          date: @record.date,
+          desire_level: @record.desire_level,
+          feeling_level: @record.feeling_level,
+          hour: @record.hour,
+          email: @record.email
+          }
+        }
     end
 
     assert_redirected_to show_date_records_path(date: @record[:date])
