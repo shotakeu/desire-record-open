@@ -1,8 +1,11 @@
 require 'test_helper'
 
 class RecordsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
     @record = records(:one)
+    sign_in users(:john)
   end
 
   test "should get index" do
@@ -17,10 +20,22 @@ class RecordsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create record" do
     assert_difference('Record.count') do
-      post records_url, params: { record: { activity: @record.activity, comment: @record.comment, date: @record.date, desire_level: @record.desire_level, feeling_level: @record.feeling_level, hour: @record.hour } }
+      post records_url, params: { record:
+        { activity: @record.activity,
+          comment: @record.comment,
+          date: @record.date,
+          desire_level: @record.desire_level,
+          feeling_level: @record.feeling_level,
+          hour: @record.hour,
+          email: @record.email
+          }
+        }
     end
 
-    assert_redirected_to record_url(Record.last)
+    assert_redirected_to show_date_records_path(date: @record[:date])
+  end
+
+  test "show_date by filiterd user" do
   end
 
   test "should show record" do

@@ -18,23 +18,19 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.rdoc_options = ["--main".freeze, "README.rdoc".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.2.2".freeze)
-  s.rubygems_version = "2.6.11".freeze
+  s.rubygems_version = "3.1.2".freeze
   s.summary = "Object-relational mapper framework (part of Rails).".freeze
 
-  s.installed_by_version = "2.6.11" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.1.2" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
+  end
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<activesupport>.freeze, ["= 5.2.4.1"])
-      s.add_runtime_dependency(%q<activemodel>.freeze, ["= 5.2.4.1"])
-      s.add_runtime_dependency(%q<arel>.freeze, [">= 9.0"])
-    else
-      s.add_dependency(%q<activesupport>.freeze, ["= 5.2.4.1"])
-      s.add_dependency(%q<activemodel>.freeze, ["= 5.2.4.1"])
-      s.add_dependency(%q<arel>.freeze, [">= 9.0"])
-    end
+  if s.respond_to? :add_runtime_dependency then
+    s.add_runtime_dependency(%q<activesupport>.freeze, ["= 5.2.4.1"])
+    s.add_runtime_dependency(%q<activemodel>.freeze, ["= 5.2.4.1"])
+    s.add_runtime_dependency(%q<arel>.freeze, [">= 9.0"])
   else
     s.add_dependency(%q<activesupport>.freeze, ["= 5.2.4.1"])
     s.add_dependency(%q<activemodel>.freeze, ["= 5.2.4.1"])

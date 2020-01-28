@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: c7292e9a1e158e5fc9ec3026256cf7a42d70f549
+  revision: 0b550a0ed66f2c01baa5f05f1126abada47a6c6f
   specs:
     webpacker (4.2.2)
       activesupport (>= 4.2)
@@ -62,7 +62,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.1)
-    capybara (3.30.0)
+    capybara (3.31.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -89,8 +89,14 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    diff-lcs (1.3)
     erubi (1.9.0)
     execjs (2.7.0)
+    factory_bot (5.1.1)
+      activesupport (>= 4.2.0)
+    factory_bot_rails (5.1.1)
+      factory_bot (~> 5.1.0)
+      railties (>= 4.2.0)
     ffi (1.12.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -150,6 +156,10 @@ GEM
       bundler (>= 1.3.0)
       railties (= 5.2.4.1)
       sprockets-rails (>= 2.0.0)
+    rails-controller-testing (1.0.4)
+      actionpack (>= 5.0.1.x)
+      actionview (>= 5.0.1.x)
+      activesupport (>= 5.0.1.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -170,8 +180,25 @@ GEM
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    rspec-core (3.9.1)
+      rspec-support (~> 3.9.1)
+    rspec-expectations (3.9.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-rails (3.9.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.2)
     ruby_dep (1.5.0)
-    rubyzip (2.0.0)
+    rubyzip (2.1.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -236,11 +263,14 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  factory_bot_rails
   jbuilder (~> 2.5)
   letter_opener_web
   listen (>= 3.0.5, < 3.2)
   puma (~> 4.3.1)
   rails (~> 5.2.2)
+  rails-controller-testing
+  rspec-rails
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_calendar (~> 2.0)
@@ -258,4 +288,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   2.1.4
+   2.0.1
