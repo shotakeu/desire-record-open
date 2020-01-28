@@ -33,7 +33,7 @@ $ rake db:migrate
 ## Run
 
 ```
-$ bundle install --path=vender/bundle
+$ bundle install --path=vendr/bundle
 $ rake db:migrate
 $ rails server -b 192.168.33.10
 ```
