@@ -12,7 +12,12 @@ Ruby on Railsで初めて作ったオリジナルなWebアプリです。
     ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
     Rails 5.2.3
 * System dependencies
-    CentOS 6.8 で動作確認
+    * CentOS 6.8 で動作確認
+    * 主に利用しているgem
+        * devise
+        * letter_opener_web
+        * webpacker
+        * simple_calendar
 * Configuration
     // TBD
 * Database
@@ -33,7 +38,7 @@ $ rake db:migrate
 ## Run
 
 ```
-$ bundle install --path=vendr/bundle
+$ bundle install
 $ rake db:migrate
 $ rails server -b 192.168.33.10
 ```
