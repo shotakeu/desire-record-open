@@ -13,11 +13,6 @@ Ruby on Railsで初めて作ったオリジナルなWebアプリです。
     Rails 5.2.3
 * System dependencies
     * CentOS 6.8 で動作確認
-    * 主に利用しているgem
-        * devise
-        * letter_opener_web
-        * webpacker
-        * simple_calendar
 * Configuration
     // TBD
 * Database
@@ -47,6 +42,8 @@ $ rails server -b 192.168.33.10
 
 - [simple_calendar](http://excid3.github.io/simple_calendar/)
 - [devise](https://github.com/plataformatec/devise)
+- letter_opener_web
+- webpacker
 
 ### 協力
 
