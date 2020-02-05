@@ -6,6 +6,10 @@ Ruby on Railsで初めて作ったオリジナルなWebアプリです。
 
 主に薬物・アルコール・ギャンブル等の依存症患者の渇望や気分の変化を記録するためのRails製Webアプリ。
 
+### 現状UI
+
+![https://wandering-engineer.tech/wp-content/uploads/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2020-02-05-8.08.18.png](https://wandering-engineer.tech/wp-content/uploads/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2020-02-05-8.08.18.png)
+
 ## 環境情報(environment infomation)
 
 * Ruby on Rails version
