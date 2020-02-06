@@ -7,8 +7,8 @@ class RecordsController < ApplicationController
     ## Return records created today.
     @records = Record.where(date: Date.today).where(email: current_user.email)
   end
-  
-  # GET /records/show_date?date=2019-05-25  
+
+  # GET /records/show_date?date=2019-05-25
   def show_date
     @records = Record.where(date: params[:date]).where(email: current_user.email)
     @user = current_user
@@ -19,7 +19,9 @@ class RecordsController < ApplicationController
   # GET /records/1.json
   def show
     @record = Record.find(params[:id])
-    @user = current_user
+    if @record.email != current_user.email
+      render(:file => File.join(Rails.root, 'public/403.html'), :status => 403, :layout => false)
+    end
   end
 
   # GET /records/new
@@ -32,8 +34,8 @@ class RecordsController < ApplicationController
     # TODO : GETでアクセス時、emailで判定しないと他の人に編集されてしまう
     @record = Record.find(params[:id])
     logger.debug(@record.inspect)
-    if @record.email != current_user.email 
-      render(:file => File.join(Rails.root, 'public/403.html'), :status => 403, :layout => false)    
+    if @record.email != current_user.email
+      render(:file => File.join(Rails.root, 'public/403.html'), :status => 403, :layout => false)
     end
   end
 
